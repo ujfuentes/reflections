@@ -5,6 +5,8 @@ Initializing a repository is synonymous with creating an empty repository from s
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
+The staging area is an intermediate area which consists of the files to actually be committed, and are chosen by the user as related by the working directory. The repository holds all of the metadeta that in effect turns the directory into a repository.
+
 How can you use the staging area to make sure you have one commit per logical
 change?
 
