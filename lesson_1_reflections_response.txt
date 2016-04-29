@@ -1,0 +1,36 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    It pointed out only the differences between corresponding lines. Since not many lines changed, it was easy to spot.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Previous versions can not only give you insight to the progress you have made, but also allow you to move back to a point which was better (or more stable) than the current version of the project.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Git allows a programmer to understand and track the changes in the project, so if everything works automatically, this would leave little to no flexibility to the programmer. The programmer can understand the evolution of the project better by using Git.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git has more fine-grained control because it is developed and maintained for professional use. Google Docs targets a much wider audience to allow more people to understand and use it.
+
+How can you use the commands git log and git diff to view the history of files?
+
+   The commands git log && git diff allow you to see the past changes of files, as well as a line-by-line comparision of the differences in files.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Version control allows for seamless reversion so that you can go exactly back to when the project was still working properly. This is used extensively for experimental development.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I would like to start experimenting with the different commands and begin to look at Git itself more in-depth than just using it to get and sync up my experiments and work.
+
+
+
