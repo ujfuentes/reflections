@@ -10,13 +10,28 @@ The staging area is an intermediate area which consists of the files to actually
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+The staging area allows you to add exactly what you want such that you can make atomic commits. Only the files you want to be committed will be, in other words.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Yes, you can organize the type of changes in a project by branch. This way you have linear histories for each type of (possibly totally different) change.
+
 How do the diagrams help you visualize the branch structure?
+
+The branch structure is actually a tree, and a "detached HEAD" can be seen as a node the other branches cannot traverse to in this structure. It's like a family tree of commits and branches, altogether.
+
+
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+
+Merging two branches allows you to work on branches separately and then combine them into the final project (commonly called integration). We respresent it as two branches in the diagram because the way Git stores metadata for merged branches is the commit histories of both and then combined at the new merged tip.
+
+Also merging takes what is in common with the files and keeps them, then also adds anything that was added to the original, and subtracts what was taken from the original.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Automatic merging must be done very carefully because when independent change are made on a code base, a great number of things could go wrong when you try to combine those changes. Therefore, Git is very prudent and verbose with the auto-merging functionaliy and would rather the user do things manually then guess incorrectly.

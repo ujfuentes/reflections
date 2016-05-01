@@ -6,24 +6,24 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Pulling changes manually allows you to have control over your local repository, and only keeping (possibly) the part (or branch) of the project you are currently working on, so you know what you are currently working on.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    Forks are a GitHub feature, not a git command, so although it is similar to a clone, it is not. A clone is simply a copy of an entire repository, and git clone command does this for you. Branches are a way to start a deviation in commit tracking so you can work on a new feature but does not explicity clone a repository, just the commits visible to that branch. You would use forks to clone someone else's git repository on GitHub to your GitHub account, and you would use git clone for the same reason outside of GitHub using plain git. Branches can start for any reason, but it is usually to work on a new major feature or for experimental releases.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    Having this copy helps you work offline, as you can see the state of the remote repository even if it is not perfectly in sync with its actuall current state. This is used often, espcially for offline work.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    The initial learning curve to using Git and GitHub properly and smoothly is harder than just sharing files more informally (by email or USB drive). However, git and github allow changes to be tracked in such a way that problems can be identified in more professional ways rather than just looking through code completely manually without having a process behind that like git and GitHub.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    You would want to make changes in a branch when you are working rather disparately with a team and want to make sure everyone is on the same page with the next official update to the code base. This is a very common issue which is why GitHub and other use a concept like "pull requests" in order to make sure code gets signed off by the team before being merged into another branch. This can be inconvenient, however, if no one responds and then the developer has to wait to merge the code, but he can still test it separately first, anyway.
